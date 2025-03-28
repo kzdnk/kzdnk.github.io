@@ -1,0 +1,29 @@
+# The URL the site will be built for
+base_url = "https://kzdnk.pl"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "apollo"
+taxonomies = [{ name = "tags" }]
+
+title = "kzdnk"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+theme = "auto"
+menu = [
+  { name = "/posts", url = "/posts", weight = 1 },
+]
+socials = [
+  { name = "github", url = "https://github.com/kzdnk/", icon = "github" },
+  { name = "bluesky", url = "https://bsky.app/profile/kzdnk.pl", icon = "bluesky" },
+]
+repo_view=false
